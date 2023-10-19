@@ -3,10 +3,10 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import {useNavigate } from "react-router-dom";
 import DrawerArea from "../Component/DrawerArea";
-import MainPage from "../InnerDashboardPage/MainPage";
+import UserPage from "../InnerDashboardPage/UserPage";
 
 
-export default function PermanentDrawerLeft() {
+export default function DashboardUser() {
 
   const history = useNavigate();
   return (
@@ -17,7 +17,7 @@ export default function PermanentDrawerLeft() {
         sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
       >
         <Toolbar />
-        <MainPage />
+        <UserPage />
       </Box>
     </Box>
   );

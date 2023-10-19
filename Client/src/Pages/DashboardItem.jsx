@@ -1,13 +1,11 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DrawerArea from "../Component/DrawerArea";
-import MainPage from "../InnerDashboardPage/MainPage";
+import ItemPage from "../InnerDashboardPage/ItemPage";
 
-
-export default function PermanentDrawerLeft() {
-
+export default function DashboardItem() {
   const history = useNavigate();
   return (
     <Box sx={{ display: "flex" }}>
@@ -17,7 +15,7 @@ export default function PermanentDrawerLeft() {
         sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
       >
         <Toolbar />
-        <MainPage />
+        <ItemPage />
       </Box>
     </Box>
   );
